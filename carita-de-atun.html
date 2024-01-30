@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Romántico</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            animation: heartbeat 1s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            color: #ff69b4;
+            margin: 10px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var mensaje = `
+            <p>Hola chinchosita 💖,</p>
+            <p>Eres la constante que hace que mi corazón lata más rápido.</p>
+            <p>Mis ojos brillan como un bucle infinito cada vez que te veo.</p>
+            <p>Tú eres la excepción en mi código de vida.</p>
+            <p>Te amo más que a cualquier otra función.</p>
+            <p style="font-size: 20px; font-weight: bold;">Con amor,<br>[DENNIS CUADROS]</p>
+        `;
+
+        // Muestra el mensaje en el cuerpo del documento
+        document.body.innerHTML = mensaje;
+    });
+</script>
+
+</body>
+</html>
